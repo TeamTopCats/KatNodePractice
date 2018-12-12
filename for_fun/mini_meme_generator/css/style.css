@@ -1,0 +1,119 @@
+body { 
+    /* background: url("https://orig00.deviantart.net/3f33/f/2015/174/3/b/5_text_for_meow__3_by_mariiedith-d8yemkw.png"); 
+    background-repeat: space;
+    background-size: 300px 100px; */
+    background-color: rgb(0, 225, 255);
+    color: rgb(255, 0, 255);
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    
+}
+
+.ImageContainer {
+    height: 600px;
+}
+
+.Text {
+    font-family: fantasy;
+    font-size: 146px;
+    letter-spacing: 3px;
+}
+
+.ButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.Button {
+    outline:none;
+    background-color: transparent;
+    border-style: none;
+    height: 79px;
+    width: 206px;
+    margin-top: 20px;
+    color: rgb(161, 1, 161);
+    font-family: fantasy;
+    font-size: 44px;
+    border-radius: 30px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.Button:hover {
+    background-color:  rgb(161, 1, 161);
+    color: rgb(0, 225, 255);
+}
+
+/*Loader*/
+.ajax-loader {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: rotate(90deg) translate(-50%, 0%);
+    font-size: 50px;
+    width: 1em;
+    height: 3em;
+    color: #66ffff;
+  }
+  .ajax-loader .paw {
+    width: 1em;
+    height: 1em;
+    animation: 2050ms pawAnimation ease-in-out infinite;
+    opacity: 0;
+  }
+  .ajax-loader .paw svg {
+    width: 100%;
+    height: 100%;
+  }
+  .ajax-loader .paw .icon {
+    fill: currentColor;
+  }
+  .ajax-loader .paw:nth-child(odd) {
+    transform: rotate(-10deg);
+  }
+  .ajax-loader .paw:nth-child(even) {
+    transform: rotate(10deg) translate(125%, 0);
+  }
+  .ajax-loader .paw:nth-child(1) {
+    animation-delay: 1.25s;
+  }
+  .ajax-loader .paw:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .ajax-loader .paw:nth-child(3) {
+    animation-delay: 0.75s;
+  }
+  .ajax-loader .paw:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+  .ajax-loader .paw:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+  .ajax-loader .paw:nth-child(6) {
+    animation-delay: 0s;
+  }
+  .no-cssanimations .ajax-loader .paw {
+    opacity: 1;
+  }
+  @keyframes pawAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
